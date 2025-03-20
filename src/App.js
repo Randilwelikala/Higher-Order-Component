@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import TextField from './TextField';
+import LabeledTextField from './LabeledTextField';
+
+const NewLabeledTextField = LabeledTextField(TextField,"First Name");
 
 function App() {
   return (
