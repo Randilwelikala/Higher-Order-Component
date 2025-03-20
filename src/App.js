@@ -3,8 +3,11 @@ import './App.css';
 import TextField from './TextField';
 import LabeledTextField from './LabeledTextField';
 import Button from './Button';
+import ClickButton from './ClickButton';
+
 
 const NewLabeledTextField = LabeledTextField(TextField,"First Name");
+const NewClikButton = ClickButton(Button);
 
 function App() {
   return (
@@ -25,7 +28,8 @@ function App() {
         >
           Learn React
         </a>
-        <Button text = "Click Me"/>
+        <Button text = "Normal Button"/>
+        <NewClikButton text = "Click Me"/>
       </header>
     </div>
   );
