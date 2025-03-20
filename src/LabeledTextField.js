@@ -4,7 +4,7 @@ function LabeledTextField(NormalTextField,labeltext){
 
     class finalTextField extends Component{
 
-        return(){
+        render(){
 
             return(
                 <>
