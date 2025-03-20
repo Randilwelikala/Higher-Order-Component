@@ -8,9 +8,13 @@ const Button = ({text})=>{
         console.log("Clicked");
         setCount(count+1);
     }
+
+    const mouseHover = ()=>{
+        setCount(count+1);
+    }
     return(
         <div>
-            <button onClick={mouseClick}>{text}</button>
+            <button onClick={mouseClick} onMouseOver={mouseHover}>{text}</button>
             
 
             <h6>{count}</h6>
