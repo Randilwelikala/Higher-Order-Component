@@ -6,7 +6,7 @@ const ClickButton = (WrapperButton)=>{
         const [count,setCount] = useState(0);
 
         const clickTrigger = (current_count)=>{
-            setCount(current_count+1);
+            setCount(count+1);
 
         }
         return(
