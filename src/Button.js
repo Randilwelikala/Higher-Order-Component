@@ -5,7 +5,9 @@ const Button = ({text,clickTrigger,count})=>{
     
 
     const mouseClick=(e)=>{
-        clickTrigger(count)
+        if(clickTrigger){
+            clickTrigger(count);
+        }
     }
 
     const mouseHover = ()=>{
