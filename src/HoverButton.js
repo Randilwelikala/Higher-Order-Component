@@ -5,13 +5,13 @@ const HoverButton = (WrapperButton)=>{
     const FinalButton = (props)=>{
         const [count,setCount] = useState(0);
 
-        const hoverTrigger = (current_count)=>{
+        const hoverTrigger = (count)=>{
             setCount(count+1);
 
         }
         return(
         <>
-            <WrapperButton HoverTrigger = {hoverTrigger} {...props} />
+            <WrapperButton hoverTrigger = {hoverTrigger} {...props} count={count} />
             <h6>{count}</h6>
             </>
         )

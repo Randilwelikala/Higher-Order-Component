@@ -5,7 +5,7 @@ const ClickButton = (WrapperButton)=>{
     const FinalButton = (props)=>{
         const [count,setCount] = useState(0);
 
-        const clickTrigger = (current_count)=>{
+        const clickTrigger = (count)=>{
             setCount(count+1);
 
         }
