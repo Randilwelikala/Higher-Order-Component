@@ -4,10 +4,12 @@ import TextField from './TextField';
 import LabeledTextField from './LabeledTextField';
 import Button from './Button';
 import ClickButton from './ClickButton';
+import HoverButton from './HoverButton';
 
 
 const NewLabeledTextField = LabeledTextField(TextField,"First Name");
 const NewClikButton = ClickButton(Button);
+const NewHoverButton = HoverButton(Button)
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         </a>
         <Button text = "Normal Button"/>
         <NewClikButton text = "Click Me"/>
+        <NewHoverButton text="Hover Me"/>
       </header>
     </div>
   );
