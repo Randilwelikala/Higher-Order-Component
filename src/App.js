@@ -9,6 +9,7 @@ import HoverButton from './HoverButton';
 
 const NewLabeledTextField = LabeledTextField(TextField,"First Name");
 const NewClikButton = ClickButton(Button);
+// const NewHoverButton = HoverButton(Button);
 const NewHoverButton = HoverButton(Button);
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
         </a>
         <Button text = "Normal Button"/>
         <NewClikButton text = "Click Me"/>
-        <NewHoverButton text="Hover Me"/>
+        <NewHoverButton text = "Hover Me"/>
+        
       </header>
     </div>
   );
