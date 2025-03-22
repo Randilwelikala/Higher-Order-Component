@@ -9,7 +9,7 @@ import HoverButton from './HoverButton';
 
 const NewLabeledTextField = LabeledTextField(TextField,"First Name");
 const NewClikButton = ClickButton(Button);
-const NewHoverButton = HoverButton(Button)
+const NewHoverButton = HoverButton(Button);
 
 function App() {
   return (

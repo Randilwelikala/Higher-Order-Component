@@ -11,7 +11,7 @@ const HoverButton = (WrapperButton)=>{
         }
         return(
         <>
-            <WrapperButton hoverTrigger = {hoverTrigger} {...props} count={count} />
+            <WrapperButton hoverTrigger = {hoverTrigger} {...props}/>
             <h6>{count}</h6>
             </>
         )
