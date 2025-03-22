@@ -11,7 +11,7 @@ const ClickButton = (WrapperButton)=>{
         }
         return(
         <>
-            <WrapperButton clickTrigger = {clickTrigger} {...props}/>
+            <WrapperButton clickTrigger = {clickTrigger} {...props} count={count}/>
             <h6>{count}</h6>
             </>
         )
