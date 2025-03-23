@@ -12,7 +12,7 @@ const NewLabeledTextField = LabeledTextField(TextField,"First Name");
 const NewClikButton = ClickButton(Button);
 // const NewHoverButton = HoverButton(Button);
 const NewHoverButton = HoverButton(Button);
-const NewAdvanceButton = AdvanceButton(Button,false,true);
+const NewAdvanceButton = AdvanceButton(Button,true,true);
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
         <Button text = "Normal Button"/>
         <NewClikButton text = "Click Me"/>
         <NewHoverButton text = "Hover Me"/>
-        <NewAdvanceButton text="Click Me"/>
+        <NewAdvanceButton text="Click Me or Hover Me"/>
         
       </header>
     </div>
