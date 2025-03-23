@@ -5,12 +5,14 @@ import LabeledTextField from './LabeledTextField';
 import Button from './Button';
 import ClickButton from './ClickButton';
 import HoverButton from './HoverButton';
+import AdvanceButton from './AdvanceButton';
 
 
 const NewLabeledTextField = LabeledTextField(TextField,"First Name");
 const NewClikButton = ClickButton(Button);
 // const NewHoverButton = HoverButton(Button);
 const NewHoverButton = HoverButton(Button);
+const NewAdvanceButton = AdvanceButton(Button,false,true);
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
         <Button text = "Normal Button"/>
         <NewClikButton text = "Click Me"/>
         <NewHoverButton text = "Hover Me"/>
+        <NewAdvanceButton text="Click Me"/>
         
       </header>
     </div>

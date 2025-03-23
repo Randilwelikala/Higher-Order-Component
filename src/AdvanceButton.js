@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const AdvanceButton = (WrapperButton)=>{
+const AdvanceButton = (WrapperButton, hover=false,click=false)=>{
     const FinalButton = (props)=>{
         const [count,setCount] = useState(0);
 
@@ -15,7 +15,16 @@ const AdvanceButton = (WrapperButton)=>{
         
 
         return(
-            <WrapperButton />
+            <>
+            <WrapperButton clickTrigger={click?clickTrigger:null} hoverTrigger={hover?hoverTrigger:null} {...props} />
+            <h6>{count}</h6>
+            
+
+            </>
         )
     }
+
+    return FinalButton;
 }
+
+export default AdvanceButton;
